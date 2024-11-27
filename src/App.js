@@ -1,24 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import {Helmet} from "react-helmet";
+import * as ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import router from './router';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-bootstrap/Button';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        Hello World Testing
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Helmet>
+        <title>
+          Home
+        </title>
+      </Helmet>
+      <RouterProvider router={router} />
     </div>
   );
 }
