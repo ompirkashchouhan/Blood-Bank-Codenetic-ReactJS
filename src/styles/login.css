@@ -1,0 +1,130 @@
+@font-face {
+    font-family: Popins;
+    src: url('../assets/fonts/Poppins/Poppins-Medium.ttf');
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #f8f9fa;
+    font-family: Popins;
+}
+._AppLogin{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+._InputSection{
+    border: 1px solid #80808042;
+    box-shadow: 0px 0px 25px #80808036;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px 50px !important;
+    transition: all 0.7s ease !important;
+}
+
+._InputSection:hover{
+    border-radius: 0px;
+    box-shadow: 0px 0px 5px #80808010 !important;
+}
+
+._inputs{
+    box-shadow: none !important;
+}
+
+.logoMainLogin{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+.logoMainLogin > img{
+    width: 90px;
+    height: 60px;
+}
+._LoginSignupBtn{
+    margin-left: -0px !important;
+}
+
+.inputGroupLogin{
+    height: 20px !important;
+    margin-bottom: 15px;
+    box-shadow: none !important;
+}
+.inputGroupLogin:focus{
+    border-color: #cf0707a2;
+}
+.DropdownAgeLogin{
+    box-shadow: none !important;
+}
+.DropdownAgeLogin > option:hover{
+    background-color: #cf0707a2 !important;
+    color: white !important;
+}
+.DropdownAgeLogin:focus{
+    border-color: #cf0707a2;
+}
+
+
+/* Google Button */
+
+.google-btn {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .google-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  .google-btn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .google-btn {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+
+    .google-btn img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+
+  /* Loader CSS */
+  
+  .loader {
+    width: 50px;
+    --b: 8px; 
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 1px;
+    background: conic-gradient(#0000 10%,#f03355) content-box;
+    -webkit-mask:
+      repeating-conic-gradient(#0000 0deg,#000 1deg 20deg,#0000 21deg 36deg),
+      radial-gradient(farthest-side,#0000 calc(100% - var(--b) - 1px),#000 calc(100% - var(--b)));
+    -webkit-mask-composite: destination-in;
+            mask-composite: intersect;
+    animation:l4 1s infinite steps(10);
+  }
+  @keyframes l4 {to{transform: rotate(1turn)}}

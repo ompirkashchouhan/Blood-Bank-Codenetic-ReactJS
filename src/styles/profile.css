@@ -1,0 +1,90 @@
+/* Container */
+.profile-container {
+  max-width: 600px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+/* Heading */
+h3 {
+  text-align: center;
+  color: #8a0303;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+input:focus {
+  border-color: #8a0303;
+  outline: none;
+  box-shadow: 0 0 5px rgba(138, 3, 3, 0.5);
+}
+
+/* Button */
+/* button {
+  background-color: #8a0303;
+  color: #fff;
+  border: none;
+  padding: 14px 20px;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #be0a0a;
+} */
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  label, input, button {
+    font-size: 14px;
+  }
+}
+
+/* @media (max-width: 480px) {
+  button {
+    padding: 12px;
+    font-size: 16px;
+  }
+} */

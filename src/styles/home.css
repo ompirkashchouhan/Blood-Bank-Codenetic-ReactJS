@@ -1,0 +1,498 @@
+/* Hero Section Styling */
+
+.hero {
+    display: flex;
+    align-items: center;
+    height: 580px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3rem 2rem;
+    background-color: #fff;
+}
+
+.hero-content {
+    flex: 1 1 500px;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e63946;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #e63946;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.hero-content .btn:hover {
+    background-color: #d62828;
+}
+
+.hero-image {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: 450px;
+    width: 550px;
+}
+
+/* About Page Styling */
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.about-content {
+    flex: 1 1 500px;
+    padding: 1.5rem;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    color: #e63946;
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    margin-bottom: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.about-image {
+    flex: 1 1 400px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Donate Section Styling */
+
+.donateMainSection{
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../assets/images/donateSecBackground.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.innerDonateMain{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    gap: 10px;
+    height: 165px;
+    padding: 15px 25px;
+    transition: all 0.7s ease;
+    box-shadow: 0px 0px 4px #c4bcbcc9;
+}
+
+.innerDonateMain:hover{
+    box-shadow: 0px 0px 9px #c4bcbcc9;
+}
+
+.SelectDropdownBlood{
+    box-shadow: none !important;
+}
+
+
+/* Available Donors Styling */
+
+.blood-bank{
+    padding: 40px;
+}
+
+.donor-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .group-item {
+    background-color: #eaf2f8;
+    border-radius: 8px;
+    padding: 20px;
+    width: 22%;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .group-item h3 {
+    text-align: center;
+    color: #2980b9;
+    margin-bottom: 15px;
+  }
+  
+  .group-item ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .group-item li {
+    font-size: 16px;
+    color: #34495e;
+    margin-bottom: 8px;
+  }
+
+  /* Our Team Section Styling */
+
+  .teamMain {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Team Grid */
+.team-grid {
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+
+}
+
+/* Team Card */
+.team-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid red;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s ease;
+}
+
+.team-card:hover {
+    cursor: pointer;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.377);
+    transform: translateY(-10px);
+}
+
+.team-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #e74c3c;
+}
+
+.team-name {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.team-role {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Main Donor Page Section */
+
+._SectionMainDonors{
+    display: flex;
+    height: auto;
+    justify-content: center;
+}
+
+._innerSectionMain{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: url('../assets/images/Red\ Background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+._innerSectionMain > h3{
+    color: white;
+    font-weight: 800;
+}
+
+.donorBody{
+    height: 150px;
+    gap: 20px;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: white;
+}
+
+._dropdownsDonor{
+    height: 40px !important;
+    box-shadow: none !important;
+}
+._dropdownsDonor:focus{
+    border-color: #e63946;
+}
+
+/* Profile Page Styling */
+
+.profile-container {
+    max-width: 800px;
+    margin: 30px auto;
+    margin-top: 50px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Header Section */
+
+  .profile-header {
+    background-color: #8a0303;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .profile-header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+
+  .profile-header p {
+    font-size: 16px;
+  }
+
+  /* Profile Content */
+
+  .profile-content {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .profile-image {
+    flex: 1 1 30%;
+    text-align: center;
+  }
+
+  .profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #8a0303;
+    object-fit: cover;
+  }
+
+  .profile-details {
+    flex: 1 1 65%;
+  }
+
+  .profile-details h2 {
+    color: #8a0303;
+    margin-bottom: 10px;
+  }
+
+  .profile-details p {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .profile-details p span {
+    font-weight: bold;
+    color: #333;
+  }
+
+  /* Blood Group Badge */
+
+  .blood-group {
+    display: inline-block;
+    background-color: #8a0303;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .updateProfileBtn{
+    background-color: #8a0303 !important;
+    color: white;
+    margin-left: 20px;
+    border: none ;
+    transition: transform 0.4s ease;
+   }
+
+.updateProfileBtn:hover{
+      transform: translateY(-5px);
+      box-shadow: 0px 0px 10px #312f2f62;
+  }
+
+  .ResultsList{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .ResultsList .results{
+    gap: 20px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .donorCard{
+    border: 2px dashed #8a0303;
+    padding: 15px;
+    width: 350px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    overflow: hidden; /* Ensure child elements are clipped */
+  }
+
+  .donorCard:hover{
+    transform: scale(1.0100); /* Slight scaling effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Elevate with shadow */
+  }
+
+  .CardImage{
+    transition: transform 0.3s ease;
+  }
+
+  .CardImage:hover{
+    transform: scale(1.1)
+  }
+
+  @media (max-width: 600px) {
+    .profile-content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-details {
+      text-align: center;
+    }
+  }
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    .team-card {
+        padding: 15px;
+    }
+    .hero-image img {
+      width: 100% !important;
+      margin-bottom: 20px;
+    }
+    .hero-content{
+      margin: 0%;
+      padding: 0%;
+      gap: 0px;
+    }
+    .team-grid{
+      justify-content: center;
+      justify-items: normal;
+    }
+}
+  
+  /* Responsive Design */
+
+  @media (max-width: 768px) {
+    .group-item {
+      width: 48%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .group-item {
+      width: 100%;
+    }
+    .donorBody{
+      flex-direction: column;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 985px) {
+    .hero {
+      height: auto;
+    }
+  }
+
+/* Responsive Media Queries */
+
+@media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+}

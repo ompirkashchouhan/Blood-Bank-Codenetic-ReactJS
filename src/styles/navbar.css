@@ -1,0 +1,52 @@
+.MyNavbar {
+    background-color: #8a0303;
+    height: 75px;
+}
+
+.MyNavbarContainer{
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  /* Underline effect */
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 100%;
+  }
+
+  .MyNavOffCanvasBody{
+    background-color: #8a0303;
+  }
+
+
+@media (max-width: 767px) {
+    .MyNavbarContainer{
+        margin-top: -100px;
+    }
+    .MyNavOffCanvasBody {
+        width: 100%;
+    }
+}
