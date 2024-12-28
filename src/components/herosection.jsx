@@ -328,7 +328,7 @@ function MainSectionDonors() {
           </h1>
             {donors.length > 0 ? (
               donors.map((donors) => (
-
+                <div className="cardMain">
                 <Card key={donors.id} className="donorCard">
                   <Card.Body>
                     <img src={donors.ImageUrl? donors.ImageUrl  : DummyProfile} className="CardImage" alt="Img" style={{width : '80px' , height : '80px' , borderRadius : '50%' , border : '2px solid #8a0303' , marginBottom : '20px'}} />
@@ -342,6 +342,7 @@ function MainSectionDonors() {
                     </Card.Text>
                   </Card.Body>
                 </Card>
+                </div>
               ))
             ) : (
               <center>

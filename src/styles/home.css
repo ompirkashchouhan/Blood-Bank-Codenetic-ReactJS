@@ -393,17 +393,19 @@
     width: 100%;
     height: auto;
     padding: 50px;
-    border: 1px solid;
-    display: flex;
-    flex-wrap: wrap;
   }
   
   .ResultsList .results{
     gap: 20px;
     height: auto;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 20px;
+  }
+
+  .cardMain{
+    display: flex;
   }
 
   .donorCard{
@@ -412,13 +414,13 @@
     width: 350px;
     margin-bottom: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-    overflow: hidden; /* Ensure child elements are clipped */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
   }
 
   .donorCard:hover{
-    transform: scale(1.0100); /* Slight scaling effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Elevate with shadow */
+    transform: scale(1.0100);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   .CardImage{
@@ -495,4 +497,10 @@
       flex-direction: column;
       text-align: center;
     }
+}
+
+@media (max-width: 375px) {
+  .donorCard {
+    width: 270px;
+  }
 }
