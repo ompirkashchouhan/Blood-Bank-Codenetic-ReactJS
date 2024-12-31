@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./../styles/home.css";
+import Badge from 'react-bootstrap/Badge';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { byPrefixAndName,faEdit } from '@fortawesome/free-solid-svg-icons';
 import { Link, Element, animateScroll as scroll } from "react-scroll";
@@ -225,6 +226,20 @@ function AvailabelRecievers() {
 
 function MainSectionDonors() {
 
+  const getCompatibleBloodTypes = (type) => {
+    const compatibility = {
+      "A+": ["A+", "A-", "O+", "O-"],
+      "A-": ["A-", "O-"],
+      "B+": ["B+", "B-", "O+", "O-"],
+      "B-": ["B-", "O-"],
+      "AB+": ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"],
+      "AB-": ["A-", "B-", "AB-", "O-"],
+      "O+": ["O+", "O-"],
+      "O-": ["O-"]
+    };
+    return compatibility[type] || [];
+  };
+
   const [bloodGroup, setBloodGroup] = useState("");
   const [userType, setUserType] = useState("");
   const [city, setCity] = useState("");
@@ -310,7 +325,8 @@ function MainSectionDonors() {
             >
               Search
             </Button>
-          </div>
+          </div> <br />
+          <p>Compatible Blood Types : <h3><Badge bg="secondary">{getCompatibleBloodTypes(bloodGroup).join(", ")}</Badge></h3></p>
           <br />
           <br />
         </div>

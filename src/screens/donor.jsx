@@ -6,6 +6,7 @@ import Footer from "../components/footer";
 import InternetErrorImg from "../assets/images/wifi-slash.png";
 
 function Donor() {
+  
   const [isOnline, setIsOnline] = useState(navigator.onLine);
 
   useEffect(() => {

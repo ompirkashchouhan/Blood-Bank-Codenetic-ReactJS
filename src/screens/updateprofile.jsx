@@ -89,7 +89,6 @@ function UpdateProfilePage() {
       alert("You must be logged in to update your profile.");
       return;
     }
-
     if (
       !userData.Name ||
       !userData.Age ||
